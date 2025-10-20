@@ -1,0 +1,14 @@
+package application;
+
+import entities.Comment;
+
+public class ProgamString {
+	
+	public static void main(String [] args) {
+		
+		Comment c1 = new Comment ("HAve a nice Trip!");
+		Comment c2 = new Comment ("What that's awesome.");
+		
+	}
+
+}
