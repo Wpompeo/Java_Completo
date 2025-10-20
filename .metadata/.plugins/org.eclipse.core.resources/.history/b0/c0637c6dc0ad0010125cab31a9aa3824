@@ -1,0 +1,18 @@
+package application;
+
+import entities.OrderItem;
+import entities.Product;
+
+public class ProgramProduct {
+	
+	public static void main(String args[]) {
+		
+		Product p = new Product("Tv", 1000.0);
+		
+		OrderItem oi1 = new OrderItem(1, 1000.0, p);
+		
+		System.out.println(oi1.getQuantity() + "\n");
+		System.out.println(oi1.getPrice() + "\n");
+		System.out.println(oi1.getProduct().getName()+ "\n");
+	}
+}

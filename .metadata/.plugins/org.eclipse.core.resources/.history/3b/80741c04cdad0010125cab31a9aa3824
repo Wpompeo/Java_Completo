@@ -1,0 +1,42 @@
+package application;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Client;
+
+public class ProgramProduct {
+	
+	public static void main(String args[]) throws ParseException {
+		
+		 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("##### BEM VINDO AO CONTROLE DE COMPRAS: #####" + "\n");
+		System.out.println("Enter client data:");
+		System.out.println("Name: ");
+		String name = sc.nextLine();
+		System.out.println("Email: ");
+		String email = sc.next();
+		System.out.println("Birth date (DD/MM/YYYY): ");
+		Date birthDate = sdf.parse(sc.next());
+		
+		
+//		Product p = new Product("Tv", 1000.0);
+//		
+//		OrderItem oi1 = new OrderItem(1, 1000.0, p);
+//		
+//		System.out.println(oi1);
+		
+//		Client cli = new Client("Wagner Pompeo", "wag_pompeo@hotmail", sdf.parse("20/10/1995"));
+//		
+//		System.out.println(cli);
+		
+		sc.close();
+	}
+}
