@@ -27,7 +27,9 @@ public class BusinessAccount extends Account {
 		if(amount <= loanLimit) {
 			balance += amount - taxa;			
 		}
-		System.out.println("Valor acima do limite permitido");
+		else{
+			System.out.println("Valor acima do limite permitido");
+		}
 		
 	}
 	
