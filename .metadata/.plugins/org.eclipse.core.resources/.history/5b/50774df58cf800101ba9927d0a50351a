@@ -1,0 +1,26 @@
+package entities;
+
+public class ImportedProduct extends Products {
+	
+	private Double customsFreeDouble;
+	
+	public ImportedProduct() {
+	}
+
+	public ImportedProduct(String name, Double price, Double customsFreeDouble) {
+		super(name, price);
+		this.customsFreeDouble = customsFreeDouble;
+	}
+
+	public Double getCustomsFreeDouble() {
+		return customsFreeDouble;
+	}
+
+	public void setCustomsFreeDouble(Double customsFreeDouble) {
+		this.customsFreeDouble = customsFreeDouble;
+	}
+	
+	
+	
+
+}
