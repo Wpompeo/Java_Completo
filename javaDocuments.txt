@@ -15,4 +15,13 @@ Java Documents:
 	É fortemente recomendável usar a anotação @Override em um método sobrescrito.
 		*Facilita a leitura e compreensão do código.
 		*Avisamos ao compilador (boa prática).
+
+*classes e métodos final:
+	*Uso com a palavra chave: final
+		
+		*Classe: evita que a classe seja herdada.
+		public final class SavingsAccount{}
+	
+		*Metódo: evita que o métod sob seja sobreposto.
+
 			

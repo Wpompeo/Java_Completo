@@ -1,0 +1,30 @@
+package entities;
+
+public class OutsourcedEmployeePayments extends EmployeePayments {
+	
+	private Double additionalChargeDouble;
+	
+	public OutsourcedEmployeePayments() {
+		super();
+	}
+
+	public OutsourcedEmployeePayments(String name, Integer hours, Double valuePerHour, Double additionalChargeDouble) {
+		super(name, hours, valuePerHour);
+		this.additionalChargeDouble = additionalChargeDouble;
+	}
+
+	public Double getAdditionalChargeDouble() {
+		return additionalChargeDouble;
+	}
+
+	public void setAdditionalChargeDouble(Double additionalChargeDouble) {
+		this.additionalChargeDouble = additionalChargeDouble;
+	}
+	
+	
+	
+	
+	
+	
+
+}
