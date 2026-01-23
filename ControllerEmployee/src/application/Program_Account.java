@@ -8,8 +8,21 @@ public class Program_Account {
 
 	public static void main(String[] args) {
 
-		Account acc = new Account(1001, "Wagner", 0.0);
-		BusinessAccount bacc = new BusinessAccount(1002, "Santiago", 0.0, 500.0);
+		Account acc = new Account(1001, "Wagner", 1000.0);
+		acc.withdraw(200.0);
+		System.out.println("Valor sacado normal: " + acc.getBalance());
+		
+		/*Sopreposicao*/
+		Account acc2 = new SavingsAccount(1002, "Maria", 1000.0, 0.01);
+		acc2.withdraw(200.0);
+		System.out.println("Valor sacado com sopreposicao:" + acc2.getBalance());
+		/*Sopreposicao com super*/
+		Account acc3 = new BusinessAccount(1003, "Bob", 1000.0, 500.0);
+		acc3.withdraw(200.0);
+		System.out.println("Valor sacado com sopreposicao/super: " + acc3.getBalance());
+		
+		
+		/*BusinessAccount bacc = new BusinessAccount(1002, "Santiago", 0.0, 500.0);
 
 		// Upcasting
 
@@ -34,7 +47,7 @@ public class Program_Account {
 			SavingsAccount acc5 = (SavingsAccount) acc3;
 			acc5.updateBalance();
 			System.out.println("Update!");
-		}
+		}*/
 
 	}
 
