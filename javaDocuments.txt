@@ -9,12 +9,14 @@ Java Documents:
 		
 		*Sintaxe
 			class A extends B
+#####################################################################################################
 
 *Sobreposição ou sobrescrita
 	É a implementação de um método de uma superclasse na subclasse
 	É fortemente recomendável usar a anotação @Override em um método sobrescrito.
 		*Facilita a leitura e compreensão do código.
 		*Avisamos ao compilador (boa prática).
+#####################################################################################################
 
 *classes e métodos final:
 	*Uso com a palavra chave: final
@@ -23,5 +25,13 @@ Java Documents:
 		public final class SavingsAccount{}
 	
 		*Metódo: evita que o métod sob seja sobreposto.
+#####################################################################################################
 
-			
+ *Pilares da OOP
+	Encapsulamento / Herança / Polimorfismo
+
+#####################################################################################################
+
+*Classes abstratas ===> notação UML: italico
+	São classes que não podem ser instanciadas, uma forma de garantir herança total. Somente subclasses
+	não abstratas podem ser instanciadas, mas nunca a superclasse abstrata.
